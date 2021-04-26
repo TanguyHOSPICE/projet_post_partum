@@ -26,6 +26,9 @@ img {
 }
 .card-citations {
 	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 25%;
 	height: 25%;
 	background: whitesmoke;
