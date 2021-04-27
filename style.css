@@ -1,3 +1,4 @@
+@import url(/assets/styles/stylesheet.css);
 *,
 ::after,
 ::before {
@@ -11,7 +12,11 @@ body {
 }
 h1 {
 	position: absolute;
-	font-size: 100em;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2em;
+	font-family: raph_lanok_futureregular, sans-serif;
 	z-index: 999;
 	margin: 50% auto;
 	color: teal;
@@ -25,10 +30,6 @@ img {
 	background-position: 50% 50%;
 }
 .card-citations {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	width: 25%;
 	height: 25%;
 	background: whitesmoke;
