@@ -29,18 +29,45 @@ img {
 	object-position: center;
 	background-position: 50% 50%;
 }
-.card-citations {
+.quote-card {
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translate(-50%);
 	width: 25%;
 	height: 25%;
-	background: whitesmoke;
+	border-radius: 15px;
+	background: rgba(119, 171, 231, 0.575);
+}
+.quote {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 }
 blockquote {
-	font-size: 5em;
+	font-size: 2em;
+	font-family: stay_classy_sldtregular, sans-serif;
+	font-weight: 700;
+}
+blockquote::before,
+blockquote::after {
+	font-weight: normal;
 }
 blockquote::before {
-	content: " “ ";
+	content: " “";
 }
 blockquote::after {
-	content: " ” ";
+	content: "” ";
+}
+br {
+	width: 100%;
+	height: 2px;
+	border-radius: 5px;
+	color: black;
+}
+span.author {
+	font-size: 1.5em;
+	font-family: stay_classy_sldtregular, sans-serif;
 }
