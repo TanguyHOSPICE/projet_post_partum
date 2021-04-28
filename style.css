@@ -16,9 +16,9 @@ h1 {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 2em;
-	font-family: raph_lanok_futureregular, sans-serif;
+	font-family: hello_santtinyregular, sans-serif;
 	z-index: 999;
-	margin: 50% auto;
+	margin: 0 auto;
 	color: teal;
 }
 img {
@@ -68,6 +68,6 @@ br {
 	color: black;
 }
 span.author {
-	font-size: 1.5em;
-	font-family: stay_classy_sldtregular, sans-serif;
+	font-size: 1em;
+	font-family: raph_lanok_futureregular, sans-serif;
 }
