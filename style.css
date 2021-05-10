@@ -12,6 +12,7 @@ body {
 	height: 100vh;
 }
 /************************************************************* NAVBAR */
+/* TODO Nav Font, size, hover  */
 nav {
 	display: flex;
 	justify-content: space-around;
@@ -21,6 +22,7 @@ nav {
 	width: 100vw;
 	/* font-family: ; */
 }
+/* TODO add LOGO & dipper svg */
 .logo {
 	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -61,8 +63,8 @@ nav {
 	transition: all 0.3s ease;
 }
 
-/* Mobile */
-
+/******************************************** Mobil & tablet */
+/* TODO responsiv section (img & quote) */
 @media screen and (max-width: 768px) {
 	body {
 		overflow-x: hidden;
@@ -121,6 +123,7 @@ nav {
 	transform: rotate(45deg) translate(-5px, -6px);
 }
 /*******************************************************SECTION Dépression Post Partum  */
+/* TODO h1 resize */
 h1 {
 	position: absolute;
 	top: 50%;
