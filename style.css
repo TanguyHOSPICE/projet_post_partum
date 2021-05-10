@@ -11,6 +11,116 @@
 body {
 	height: 100vh;
 }
+/************************************************************* NAVBAR */
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(4, 245, 253);
+	min-height: 8vh;
+	width: 100vw;
+	/* font-family: ; */
+}
+.logo {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	/* font-size: ; */
+}
+.nav-links {
+	width: 66%;
+	display: flex;
+	justify-content: space-around;
+}
+.nav-links svg {
+	width: 100px;
+	height: 100px;
+	transform: rotate(45deg);
+}
+.nav-links li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	color: black;
+}
+.nav-links a {
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.burger {
+	display: none;
+	cursor: pointer;
+}
+.burger div {
+	width: 25px;
+	height: 3px;
+	background-color: blue;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+	nav {
+		justify-content: space-between;
+	}
+	nav .logo {
+		margin-left: 10px;
+	}
+	.nav-links {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		background-color: rgba(4, 245, 253, 0.664);
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		width: 40%;
+		transform: translateX(100%);
+	}
+	.nav-links li {
+		transition: transform 1.5s ease-in;
+		opacity: 0;
+	}
+	.burger {
+		display: block;
+		margin-right: 10px;
+	}
+}
+
+/* JS Class */
+.nav-active {
+	transform: translateX(0%);
+}
+/*Animation items (après fonction navSlide)*/
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+	opacity: 0;
+}
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+/*******************************************************SECTION Dépression Post Partum  */
 h1 {
 	position: absolute;
 	top: 50%;
@@ -71,25 +181,4 @@ br {
 span.author {
 	font-size: 1em;
 	font-family: raph_lanok_futureregular, sans-serif;
-}
-.navbar {
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-color: rgba(255, 255, 255, 0.767);
-	height: 100vh;
-	width: 20%;
-	z-index: 999;
-}
-.navbar ul {
-	display: flex;
-	flex-direction: column;
-}
-.navbar ul a {
-	text-decoration: none;
-}
-.navbar ul li img:first-child {
-	transform: rotate(45deg);
-	height: 40%;
-	width: 40%;
 }
