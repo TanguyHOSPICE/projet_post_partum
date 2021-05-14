@@ -30,19 +30,9 @@ nav {
 	/* font-size: ; */
 }
 .nav-links {
-	width: 66%;
+	width: 100%;
 	display: flex;
 	justify-content: space-around;
-}
-.nav-links .box-bb {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.nav-links svg {
-	width: 200px;
-	height: 100px;
-	transform: translateX(20%);
 }
 .nav-links li {
 	display: flex;
@@ -50,13 +40,24 @@ nav {
 	align-items: center;
 	list-style: none;
 }
+.nav-links .box-bb {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav-links svg {
+	width: 50%;
+	transform: translateX(77%);
+}
 .nav-links a {
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: bold;
-	font-size: 14px;
-	color: white;
+	font-size: 9px;
+	opacity: 0.5;
+	color: rgba(255, 255, 255);
 	cursor: pointer;
+	z-index: 99;
 }
 .burger {
 	display: none;
