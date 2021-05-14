@@ -46,8 +46,9 @@ nav {
 	align-items: center;
 }
 .nav-links svg {
-	width: 50%;
-	transform: translateX(77%);
+	width: 100px;
+	height: 8vh;
+	transform: scale(1.5) translate(77%);
 }
 .nav-links a {
 	text-decoration: none;
