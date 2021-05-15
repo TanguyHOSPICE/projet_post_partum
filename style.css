@@ -31,34 +31,48 @@ nav {
 }
 .nav-links {
 	width: 100%;
+	height: 100%; /*? ****/
 	display: flex;
 	justify-content: space-around;
+	align-items: center; /*? ****/
 }
 .nav-links li {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	list-style: none;
 }
 .nav-links .box-bb {
+	height: 8vh;
+	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.nav-links svg {
-	width: 100px;
+.nav-links .box-bb svg {
+	/* width: 100px;
 	height: 8vh;
-	transform: scale(1.5) translate(77%);
+	transform: translate(77%); */
+}
+.nav-links .box-bb svg:hover {
+	transform: rotate(-90deg);
 }
 .nav-links a {
+	position: absolute;
+	color: red;
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: bold;
-	font-size: 9px;
-	opacity: 0.5;
-	color: rgba(255, 255, 255);
+	font-size: 10px;
+	opacity: 1;
+	/* color: rgba(255, 255, 255); */
 	cursor: pointer;
 	z-index: 99;
+	height: 8vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .burger {
 	display: none;
