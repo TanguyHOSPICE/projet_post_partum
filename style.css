@@ -17,7 +17,7 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: rgb(4, 245, 253);
+	background-color: rgba(4, 245, 253, 0.3);
 	min-height: 8vh;
 	width: 100vw;
 	font-family: raph_lanok_futureregular;
@@ -50,23 +50,24 @@ nav {
 	justify-content: center;
 	align-items: center;
 }
-.nav-links .box-bb svg {
-	/* width: 100px;
-	height: 8vh;
-	transform: translate(77%); */
+.nav-links svg path#bg-front,
+.nav-links svg path#bg-front2,
+.nav-links svg path#bg-back,
+.nav-links svg path#inside-frame-bottle,
+.nav-links svg path#txt-inside {
+	fill: none;
 }
 .nav-links .box-bb svg:hover {
 	transform: rotate(-90deg);
 }
 .nav-links a {
 	position: absolute;
-	color: rgb(244, 141, 253);
+	color: rgb(234, 0, 255);
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: bold;
 	font-size: 10px;
 	opacity: 1;
-	/* color: rgba(255, 255, 255); */
 	cursor: pointer;
 	z-index: 99;
 	height: 8vh;
@@ -104,10 +105,10 @@ nav {
 		flex-direction: column;
 		align-items: center;
 		position: absolute;
-		background-color: rgba(4, 245, 253, 0.664);
+		background-color: rgba(4, 245, 253, 0.3);
 		right: 0px;
-		height: 92vh;
-		top: 8vh;
+		height: 88vh;
+		top: 12vh;
 		width: 40%;
 		transform: translateX(100%);
 	}
