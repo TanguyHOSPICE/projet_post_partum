@@ -60,7 +60,7 @@ nav {
 }
 .nav-links a {
 	position: absolute;
-	color: red;
+	color: rgb(244, 141, 253);
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: bold;
@@ -73,6 +73,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transform: translateX(-19px);
 }
 .burger {
 	display: none;
